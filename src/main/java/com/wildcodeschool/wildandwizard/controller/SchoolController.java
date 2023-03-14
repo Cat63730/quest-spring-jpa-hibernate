@@ -40,10 +40,11 @@ public class SchoolController {
                 school = optionalSchool.get();
             }
         }
-        model.addAttribute("School", school);
+        model.addAttribute("school", school);
 
         return "school";
     }
+
 
     @PostMapping("/school")
     public String postSchool(@ModelAttribute School school) {
